@@ -1,0 +1,163 @@
+ /* Font improt in google font */
+
+ /*  Family: [Red Hat Display] */
+
+ @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+
+ /* variables */ 
+ :root {
+    --primary-color:  hsl(225, 100%, 98%); 
+    --secondary-color: hsl(245, 75%, 52%);  
+}
+
+ *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+ }
+
+ body{
+    font-family: "Red Hat Display", serif;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url('./assets/images/pattern-background-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color:  #d5dffab8;
+ }
+
+
+ /* order-card style */
+
+  .order-card{
+    max-width: 320px;
+    border-radius: 30px;
+    background-color:  var(--primary-color);
+  }
+
+  /* order-card__header style */ 
+ 
+.order-card__header{
+    border-radius: 30px;
+}
+ .order-card__header-image{
+    width: 100%;
+    border-top-left-radius: 30px ;
+    border-top-right-radius: 30px;
+ }
+
+ .order-card__title{
+    text-align: center;
+    font-weight: 900;
+    padding-top: .8rem;
+ }
+
+ /* order-card*body style */
+
+.order-card__description{
+    text-align: center;
+    margin-top: 1.2rem;
+    color: rgba(0, 0, 0, 0.403);
+    font-weight: 600;
+    margin-left: 1.8rem;
+    margin-right: 1.8rem;
+}
+
+.order-card__plan-container{
+    display: flex;
+    background-color: rgba(71, 71, 71, 0.066);
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    border-radius: 20px;
+    margin-top: 1.2rem;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.order-card__plan-icon{
+    width: 20%;
+}
+
+.order-card__plan-title{
+    font-weight: 900;
+    margin-bottom: .3rem;
+    font-size: 1rem;
+
+}
+.order-card__plan-price{
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.345);
+}
+
+.order-card__plan-change{
+    border: none;
+    font-size: 1rem;
+    text-decoration: underline;
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+/* order-card__footer style */
+
+.order-card__footer{
+  display:flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1.2rem;
+  justify-content: center;
+  align-items: center;
+}
+.order-card__cta{
+    width: 80%;
+    padding: .9rem;
+    border-radius: 14px;
+    border: none;
+    background-color: var(--secondary-color) ;
+    color: white;
+    font-weight: 400;
+    box-shadow: 2px 9px 37px 7px rgba(42,33,133,0.33);
+    cursor: pointer;
+}
+
+.order-card__cancel{
+    border: none;
+    background-color:transparent;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 1.3rem;
+    color: rgba(0, 0, 0, 0.488);
+    cursor:pointer;
+}
+
+.order-card__cta:hover{
+    background-color: hsl(245, 70%, 59%) ;
+}
+
+.order-card__cancel:hover{
+    color: black;
+}
+
+
+
+/* media quary */ 
+
+@media (min-width:468px) {
+    .order-card{
+        max-width: 400px;
+
+    }
+    body{
+        background: url('/assets//images/pattern-background-desktop.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        
+        
+    }
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Order card for managing your subscription plans.">
+    <meta property="og:title" content="Order Card">
+    <meta property="og:description" content="View and manage your order details.">
+    <title>Order Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="order-card">
+        <section class="order-card__header">
+            <img src="./assets/images/illustration-hero.svg" alt="Order card hero illustration" class="order-card__header-image">
+            <h1 class="order-card__title">
+                Order Summary
+            </h1>
+        </section>
+
+        <section class="order-card__body">
+            <p class="order-card__description">
+                You can now listen to millions of songs, audiobooks, and podcasts on any device, anywhere you like!
+            </p>
+
+            <div class="order-card__plan-container">
+                <img src="./assets/images/icon-music.svg" alt="Music icon for the plan" class="order-card__plan-icon">
+                <div class="order-card__plan-details">
+                    <p class="order-card__plan-title">Annual Plan</p>
+                    <p class="order-card__plan-price">$59.99/year</p>
+                </div>
+                <button class="order-card__plan-change" aria-label="Change the plan">Change</button>
+            </div>
+        </section>
+
+        <section class="order-card__footer">
+            <button class="order-card__cta">Proceed to Payment</button>
+            <button class="order-card__cancel" aria-label="Cancel the order">Cancel Order</button>
+        </section>
+    </div>
+</body>
+</html>
